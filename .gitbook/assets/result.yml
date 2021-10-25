@@ -1,0 +1,1106 @@
+openapi: 3.0.0
+info:
+  title: Platform API Dev Trimmed
+  version: 1.0.0
+servers:
+  - url: http://{{api_url}}
+tags:
+  - name: Account
+paths:
+  /api/Account:
+    get:
+      tags:
+        - Account
+      summary: Account
+      parameters:
+        - name: x-api-key
+          in: header
+          schema:
+            type: string
+          example: '{{api_key}}'
+      responses:
+        '200':
+          description: OK
+          headers:
+            Host:
+              schema:
+                type: string
+                example: localhost:8000
+            Date:
+              schema:
+                type: string
+                example: Thu, 30 Sep 2021 20:24:20 GMT
+            Connection:
+              schema:
+                type: string
+                example: close
+            X-Powered-By:
+              schema:
+                type: number
+                example: PHP/7.4.3
+            Cache-Control:
+              schema:
+                type: string
+                example: no-cache, private
+            Content-Type:
+              schema:
+                type: string
+                example: application/json
+            X-RateLimit-Limit:
+              schema:
+                type: integer
+                example: '60'
+            X-RateLimit-Remaining:
+              schema:
+                type: integer
+                example: '59'
+            Vary:
+              schema:
+                type: string
+                example: Origin
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                success: true
+                code: 0
+                message: OK
+                data:
+                  accounts_id: 1
+                  name: Tester
+                  domain: unifiedcompliance.com
+                  organizations_id: 12
+                  admin:
+                    first_name: Tester
+                    middle_name: null
+                    last_name: Testing
+                    email: tester@unifiedcompliance.com
+                  organization:
+                    description: >-
+                      Alcatel Lucent SA is a provider of Internet protocol (IP)
+                      networking, ultra-broadband access and cloud technology
+                      solutions. The Company operates through two segments for
+                      the networks business. The Ultra Broadband Networks
+                      segment consists of Mobile Ne...
+                    Domains:
+                      '@type': Domains
+                      '@set':
+                        - '@action': create|update|delete
+                          '@type': Domain
+                          element_id: 702
+                          domain: alcatel-lucent.com
+                          primary: true
+                    Emails:
+                      '@type': Emails
+                      '@set': []
+                    email: null
+                    '@context': https://grcschema.org/
+                    '@id': http://localhost:7002/Organization/12
+                    OrgNames:
+                      '@type': OrgNames
+                      '@set':
+                        - '@action': create|update|delete
+                          '@type': OrgName
+                          element_id: 10
+                          name: Altactel Lucent
+                          primary: true
+                    name: Altactel Lucent
+                    SocialAddresses:
+                      '@type': SocialAddresses
+                      '@action': update
+                      twitter: Alcatel_Lucent
+                      facebook: null
+                      linkedin: company/alcatel-submarine-networks-inc-
+                      youtube: null
+                    organization_type: 1
+                    OrganizationCategory:
+                      '@action': update
+                      industry: Internet Software & Services
+                      Tags:
+                        '@type': Tags
+                        '@set':
+                          - '@action': create|update|delete
+                            '@type': Tag
+                            element_id: 45
+                            tag: Technology
+                          - '@action': create|update|delete
+                            '@type': Tag
+                            element_id: 50
+                            tag: SAAS
+                          - '@action': create|update|delete
+                            '@type': Tag
+                            element_id: 47
+                            tag: B2B
+                          - '@action': create|update|delete
+                            '@type': Tag
+                            element_id: 48
+                            tag: ISP
+                          - '@action': create|update|delete
+                            '@type': Tag
+                            element_id: 46
+                            tag: Telecommunications
+                          - '@action': create|update|delete
+                            '@type': Tag
+                            element_id: 49
+                            tag: Enterprise
+                          - '@action': create|update|delete
+                            '@type': Tag
+                            element_id: 44
+                            tag: Networking
+                          - '@action': create|update|delete
+                            '@type': Tag
+                            element_id: 43
+                            tag: Information Technology & Services
+                      sector: null
+                      sic_code: null
+                      industry_group: Software & Services
+                      sub_industry: Internet Software & Services
+                      unspsc_code: null
+                      naics_code: '51'
+                      '@type': OrganizationCategory
+                    element_id: 12
+                    CoreMetaData:
+                      live_status: true
+                      superseded_by: null
+                      created_change_history_id: 3304
+                      checksum: 5
+                      notes: null
+                      date_modified: '2021-08-13'
+                      date_created: '2021-08-13'
+                      validated: null
+                      '@type': CoreMetaData
+                      modified_change_history_id: null
+                    PhoneNumbers:
+                      '@type': PhoneNumbers
+                      '@set':
+                        - '@action': create|update|delete
+                          '@type': PhoneNumber
+                          element_id: 50
+                          phone_number: +33 1 40 76 10 10
+                          primary: true
+                    OrganizationalCharacter:
+                      '@action': update
+                      lines_of_authority: null
+                      departmentalization: null
+                      specialization: null
+                      organizational_character_index: null
+                      decision_making: null
+                      communication: null
+                      span_of_control: null
+                      '@type': OrganizationalCharacter
+                      organizational_structure: null
+                    '@type': Organization
+                    PostalAddresses:
+                      '@type': PostalAddresses
+                      '@set':
+                        - '@action': create|update|delete
+                          postal_code: '92100'
+                          primary: true
+                          city: Boulogne-Billancourt
+                          address1: 148 Route de la Reine
+                          element_id: 8
+                          country_code: FRA
+                          address2: null
+                          state_territory_province: Île-de-France
+                          '@type': PostalAddress
+                          country: France
+                    legal_name: Alcatel Lucent
+                    founded: null
+                    OrganizationRoles:
+                      '@type': OrganizationRoles
+                      '@set': []
+                  memberships:
+                    - users_id: 1
+                      status: Active
+                      type: Admin
+                      persons_id: null
+                      first_name: Tester
+                      middle_name: null
+                      last_name: Testing
+                    - users_id: 2
+                      status: Disabled
+                      type: User
+                      persons_id: null
+                      first_name: Tester
+                      middle_name: null
+                      last_name: Testing
+                  addresses:
+                    primary:
+                      address1: 123 Something
+                      address2: ''
+                      city: Las Vegas
+                      state_territory_province: NV
+                      postal_code: '12345'
+                      country_code: USA
+                  phone_numbers:
+                    primary:
+                      phone_number: '123456789'
+    patch:
+      tags:
+        - Account
+      summary: Account
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                name: Tester
+                domain: unifiedcompliance.com
+                organizations_id: 1
+                addresses:
+                  primary:
+                    address_1: 1234 Something
+                    address_2: ''
+                    city: Las Vegas
+                    state_territory_province: NV
+                    postal_code: '12345'
+                    country_code: USA
+                phone_numbers:
+                  primary:
+                    phone_number: '123456789'
+      parameters:
+        - name: x-api-key
+          in: header
+          schema:
+            type: string
+          example: '{{api_key}}'
+      responses:
+        '200':
+          description: OK
+          headers:
+            Host:
+              schema:
+                type: string
+                example: localhost:8000
+            Date:
+              schema:
+                type: string
+                example: Thu, 30 Sep 2021 20:26:45 GMT
+            Connection:
+              schema:
+                type: string
+                example: close
+            X-Powered-By:
+              schema:
+                type: number
+                example: PHP/7.4.3
+            Cache-Control:
+              schema:
+                type: string
+                example: no-cache, private
+            Content-Type:
+              schema:
+                type: string
+                example: application/json
+            X-RateLimit-Limit:
+              schema:
+                type: integer
+                example: '60'
+            X-RateLimit-Remaining:
+              schema:
+                type: integer
+                example: '58'
+            Vary:
+              schema:
+                type: string
+                example: Origin
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                success: true
+                code: 0
+                message: OK
+                data:
+                  accounts_id: 1
+                  name: Tester
+                  domain: unifiedcompliance.com
+                  organizations_id: 12
+                  admin:
+                    first_name: Tester
+                    middle_name: null
+                    last_name: Testing
+                    email: tester@unifiedcompliance.com
+                  organization:
+                    description: >-
+                      Alcatel Lucent SA is a provider of Internet protocol (IP)
+                      networking, ultra-broadband access and cloud technology
+                      solutions. The Company operates through two segments for
+                      the networks business. The Ultra Broadband Networks
+                      segment consists of Mobile Ne...
+                    Domains:
+                      '@type': Domains
+                      '@set':
+                        - '@action': create|update|delete
+                          '@type': Domain
+                          element_id: 702
+                          domain: alcatel-lucent.com
+                          primary: true
+                    Emails:
+                      '@type': Emails
+                      '@set': []
+                    email: null
+                    '@context': https://grcschema.org/
+                    '@id': http://localhost:7002/Organization/12
+                    OrgNames:
+                      '@type': OrgNames
+                      '@set':
+                        - '@action': create|update|delete
+                          '@type': OrgName
+                          element_id: 10
+                          name: Altactel Lucent
+                          primary: true
+                    name: Altactel Lucent
+                    SocialAddresses:
+                      '@type': SocialAddresses
+                      '@action': update
+                      twitter: Alcatel_Lucent
+                      facebook: null
+                      linkedin: company/alcatel-submarine-networks-inc-
+                      youtube: null
+                    organization_type: 1
+                    OrganizationCategory:
+                      '@action': update
+                      industry: Internet Software & Services
+                      Tags:
+                        '@type': Tags
+                        '@set':
+                          - '@action': create|update|delete
+                            '@type': Tag
+                            element_id: 45
+                            tag: Technology
+                          - '@action': create|update|delete
+                            '@type': Tag
+                            element_id: 50
+                            tag: SAAS
+                          - '@action': create|update|delete
+                            '@type': Tag
+                            element_id: 47
+                            tag: B2B
+                          - '@action': create|update|delete
+                            '@type': Tag
+                            element_id: 48
+                            tag: ISP
+                          - '@action': create|update|delete
+                            '@type': Tag
+                            element_id: 46
+                            tag: Telecommunications
+                          - '@action': create|update|delete
+                            '@type': Tag
+                            element_id: 49
+                            tag: Enterprise
+                          - '@action': create|update|delete
+                            '@type': Tag
+                            element_id: 44
+                            tag: Networking
+                          - '@action': create|update|delete
+                            '@type': Tag
+                            element_id: 43
+                            tag: Information Technology & Services
+                      sector: null
+                      sic_code: null
+                      industry_group: Software & Services
+                      sub_industry: Internet Software & Services
+                      unspsc_code: null
+                      naics_code: '51'
+                      '@type': OrganizationCategory
+                    element_id: 12
+                    CoreMetaData:
+                      live_status: true
+                      superseded_by: null
+                      created_change_history_id: 3304
+                      checksum: 5
+                      notes: null
+                      date_modified: '2021-08-13'
+                      date_created: '2021-08-13'
+                      validated: null
+                      '@type': CoreMetaData
+                      modified_change_history_id: null
+                    PhoneNumbers:
+                      '@type': PhoneNumbers
+                      '@set':
+                        - '@action': create|update|delete
+                          '@type': PhoneNumber
+                          element_id: 50
+                          phone_number: +33 1 40 76 10 10
+                          primary: true
+                    OrganizationalCharacter:
+                      '@action': update
+                      lines_of_authority: null
+                      departmentalization: null
+                      specialization: null
+                      organizational_character_index: null
+                      decision_making: null
+                      communication: null
+                      span_of_control: null
+                      '@type': OrganizationalCharacter
+                      organizational_structure: null
+                    '@type': Organization
+                    PostalAddresses:
+                      '@type': PostalAddresses
+                      '@set':
+                        - '@action': create|update|delete
+                          postal_code: '92100'
+                          primary: true
+                          city: Boulogne-Billancourt
+                          address1: 148 Route de la Reine
+                          element_id: 8
+                          country_code: FRA
+                          address2: null
+                          state_territory_province: Île-de-France
+                          '@type': PostalAddress
+                          country: France
+                    legal_name: Alcatel Lucent
+                    founded: null
+                    OrganizationRoles:
+                      '@type': OrganizationRoles
+                      '@set': []
+                  memberships:
+                    - users_id: 1
+                      status: Active
+                      type: Admin
+                      persons_id: null
+                      first_name: Tester
+                      middle_name: null
+                      last_name: Testing
+                    - users_id: 2
+                      status: Disabled
+                      type: User
+                      persons_id: null
+                      first_name: Tester
+                      middle_name: null
+                      last_name: Testing
+                  addresses:
+                    primary:
+                      address1: 1234 Something
+                      address2: ''
+                      city: Las Vegas
+                      state_territory_province: NV
+                      postal_code: '12345'
+                      country_code: USA
+                  phone_numbers:
+                    primary:
+                      phone_number: '123456789'
+  /api/Account/add:
+    post:
+      tags:
+        - Account
+      summary: Add
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                email: testing@unifiedcompliance.com
+                first_name: Tester
+                last_name: Testing
+      parameters:
+        - name: x-api-key
+          in: header
+          schema:
+            type: string
+          example: '{{api_key}}'
+      responses:
+        '200':
+          description: OK
+          headers:
+            Host:
+              schema:
+                type: string
+                example: localhost:8000
+            Date:
+              schema:
+                type: string
+                example: Thu, 30 Sep 2021 23:26:21 GMT
+            Connection:
+              schema:
+                type: string
+                example: close
+            X-Powered-By:
+              schema:
+                type: number
+                example: PHP/7.4.3
+            Cache-Control:
+              schema:
+                type: string
+                example: no-cache, private
+            Content-Type:
+              schema:
+                type: string
+                example: application/json
+            X-RateLimit-Limit:
+              schema:
+                type: integer
+                example: '60'
+            X-RateLimit-Remaining:
+              schema:
+                type: integer
+                example: '58'
+            Vary:
+              schema:
+                type: string
+                example: Origin
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                success: true
+                code: 0
+                message: OK
+                data:
+                  membership:
+                    users_id: 2
+                    status: Active
+                    type: User
+                    persons_id: null
+                    first_name: Tester
+                    middle_name: null
+                    last_name: Testing
+                    email: testing@unifiedcompliance.com
+                    api_key: 5217be1c-3e12-4e90-a2ab-29600912473d
+  /api/Account/invite:
+    post:
+      tags:
+        - Account
+      summary: Invite
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                email: testing@unifiedcompliance.com
+                first_name: Tester
+                last_name: Testing
+      parameters:
+        - name: x-api-key
+          in: header
+          schema:
+            type: string
+          example: '{{api_key}}'
+      responses:
+        '200':
+          description: OK
+          headers:
+            Host:
+              schema:
+                type: string
+                example: localhost:8000
+            Date:
+              schema:
+                type: string
+                example: Thu, 30 Sep 2021 23:26:21 GMT
+            Connection:
+              schema:
+                type: string
+                example: close
+            X-Powered-By:
+              schema:
+                type: number
+                example: PHP/7.4.3
+            Cache-Control:
+              schema:
+                type: string
+                example: no-cache, private
+            Content-Type:
+              schema:
+                type: string
+                example: application/json
+            X-RateLimit-Limit:
+              schema:
+                type: integer
+                example: '60'
+            X-RateLimit-Remaining:
+              schema:
+                type: integer
+                example: '58'
+            Vary:
+              schema:
+                type: string
+                example: Origin
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                success: true
+                code: 0
+                message: OK
+                data:
+                  membership:
+                    users_id: 2
+                    status: Invited
+                    type: User
+                    persons_id: null
+                    first_name: Tester
+                    middle_name: null
+                    last_name: Testing
+                    email: testing@unifiedcompliance.com
+                    api_key: 5217be1c-3e12-4e90-a2ab-29600912473d
+  /api/Account/approve:
+    post:
+      tags:
+        - Account
+      summary: Approve
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                users_id: 2
+      parameters:
+        - name: x-api-key
+          in: header
+          schema:
+            type: string
+          example: '{{api_key}}'
+      responses:
+        '200':
+          description: OK
+          headers:
+            Host:
+              schema:
+                type: string
+                example: localhost:8000
+            Date:
+              schema:
+                type: string
+                example: Thu, 30 Sep 2021 23:26:21 GMT
+            Connection:
+              schema:
+                type: string
+                example: close
+            X-Powered-By:
+              schema:
+                type: number
+                example: PHP/7.4.3
+            Cache-Control:
+              schema:
+                type: string
+                example: no-cache, private
+            Content-Type:
+              schema:
+                type: string
+                example: application/json
+            X-RateLimit-Limit:
+              schema:
+                type: integer
+                example: '60'
+            X-RateLimit-Remaining:
+              schema:
+                type: integer
+                example: '58'
+            Vary:
+              schema:
+                type: string
+                example: Origin
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                success: true
+                code: 0
+                message: OK
+                data:
+                  membership:
+                    users_id: 2
+                    status: Active
+                    type: User
+                    persons_id: null
+                    first_name: Tester
+                    middle_name: null
+                    last_name: Testing
+                    email: testing@unifiedcompliance.com
+                    api_key: 5217be1c-3e12-4e90-a2ab-29600912473d
+  /api/Account/deny:
+    post:
+      tags:
+        - Account
+      summary: Deny
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                users_id: 2
+      parameters:
+        - name: x-api-key
+          in: header
+          schema:
+            type: string
+          example: '{{api_key}}'
+      responses:
+        '200':
+          description: OK
+          headers:
+            Host:
+              schema:
+                type: string
+                example: localhost:8000
+            Date:
+              schema:
+                type: string
+                example: Thu, 30 Sep 2021 23:26:21 GMT
+            Connection:
+              schema:
+                type: string
+                example: close
+            X-Powered-By:
+              schema:
+                type: number
+                example: PHP/7.4.3
+            Cache-Control:
+              schema:
+                type: string
+                example: no-cache, private
+            Content-Type:
+              schema:
+                type: string
+                example: application/json
+            X-RateLimit-Limit:
+              schema:
+                type: integer
+                example: '60'
+            X-RateLimit-Remaining:
+              schema:
+                type: integer
+                example: '58'
+            Vary:
+              schema:
+                type: string
+                example: Origin
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                success: true
+                code: 0
+                message: OK
+                data:
+                  membership:
+                    users_id: 2
+                    status: Declined
+                    type: User
+                    persons_id: null
+                    first_name: Tester
+                    middle_name: null
+                    last_name: Testing
+                    email: testing@unifiedcompliance.com
+                    api_key: 5217be1c-3e12-4e90-a2ab-29600912473d
+  /api/Account/promote:
+    post:
+      tags:
+        - Account
+      summary: Promote
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                users_id: 2
+      parameters:
+        - name: x-api-key
+          in: header
+          schema:
+            type: string
+          example: '{{api_key}}'
+      responses:
+        '200':
+          description: OK
+          headers:
+            Host:
+              schema:
+                type: string
+                example: localhost:8000
+            Date:
+              schema:
+                type: string
+                example: Thu, 30 Sep 2021 23:26:21 GMT
+            Connection:
+              schema:
+                type: string
+                example: close
+            X-Powered-By:
+              schema:
+                type: number
+                example: PHP/7.4.3
+            Cache-Control:
+              schema:
+                type: string
+                example: no-cache, private
+            Content-Type:
+              schema:
+                type: string
+                example: application/json
+            X-RateLimit-Limit:
+              schema:
+                type: integer
+                example: '60'
+            X-RateLimit-Remaining:
+              schema:
+                type: integer
+                example: '58'
+            Vary:
+              schema:
+                type: string
+                example: Origin
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                success: true
+                code: 0
+                message: OK
+                data:
+                  membership:
+                    users_id: 2
+                    status: Active
+                    type: Admin
+                    persons_id: null
+                    first_name: Tester
+                    middle_name: null
+                    last_name: Testing
+                    email: testing@unifiedcompliance.com
+                    api_key: 5217be1c-3e12-4e90-a2ab-29600912473d
+  /api/Account/demote:
+    post:
+      tags:
+        - Account
+      summary: Demote
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                users_id: 2
+      parameters:
+        - name: x-api-key
+          in: header
+          schema:
+            type: string
+          example: '{{api_key}}'
+      responses:
+        '200':
+          description: OK
+          headers:
+            Host:
+              schema:
+                type: string
+                example: localhost:8000
+            Date:
+              schema:
+                type: string
+                example: Thu, 30 Sep 2021 23:26:21 GMT
+            Connection:
+              schema:
+                type: string
+                example: close
+            X-Powered-By:
+              schema:
+                type: number
+                example: PHP/7.4.3
+            Cache-Control:
+              schema:
+                type: string
+                example: no-cache, private
+            Content-Type:
+              schema:
+                type: string
+                example: application/json
+            X-RateLimit-Limit:
+              schema:
+                type: integer
+                example: '60'
+            X-RateLimit-Remaining:
+              schema:
+                type: integer
+                example: '58'
+            Vary:
+              schema:
+                type: string
+                example: Origin
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                success: true
+                code: 0
+                message: OK
+                data:
+                  membership:
+                    users_id: 2
+                    status: Active
+                    type: User
+                    persons_id: null
+                    first_name: Tester
+                    middle_name: null
+                    last_name: Testing
+                    email: testing@unifiedcompliance.com
+                    api_key: 5217be1c-3e12-4e90-a2ab-29600912473d
+  /api/Account/activate:
+    post:
+      tags:
+        - Account
+      summary: Activate
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                users_id: 2
+      parameters:
+        - name: x-api-key
+          in: header
+          schema:
+            type: string
+          example: '{{api_key}}'
+      responses:
+        '200':
+          description: OK
+          headers:
+            Host:
+              schema:
+                type: string
+                example: localhost:8000
+            Date:
+              schema:
+                type: string
+                example: Thu, 30 Sep 2021 23:26:21 GMT
+            Connection:
+              schema:
+                type: string
+                example: close
+            X-Powered-By:
+              schema:
+                type: number
+                example: PHP/7.4.3
+            Cache-Control:
+              schema:
+                type: string
+                example: no-cache, private
+            Content-Type:
+              schema:
+                type: string
+                example: application/json
+            X-RateLimit-Limit:
+              schema:
+                type: integer
+                example: '60'
+            X-RateLimit-Remaining:
+              schema:
+                type: integer
+                example: '58'
+            Vary:
+              schema:
+                type: string
+                example: Origin
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                success: true
+                code: 0
+                message: OK
+                data:
+                  membership:
+                    users_id: 2
+                    status: Active
+                    type: Admin
+                    persons_id: null
+                    first_name: Tester
+                    middle_name: null
+                    last_name: Testing
+                    email: testing@unifiedcompliance.com
+                    api_key: 5217be1c-3e12-4e90-a2ab-29600912473d
+  /api/Account/remove:
+    post:
+      tags:
+        - Account
+      summary: Remove
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                users_id: 2
+      parameters:
+        - name: x-api-key
+          in: header
+          schema:
+            type: string
+          example: '{{api_key}}'
+      responses:
+        '200':
+          description: OK
+          headers:
+            Host:
+              schema:
+                type: string
+                example: localhost:8000
+            Date:
+              schema:
+                type: string
+                example: Thu, 30 Sep 2021 23:26:21 GMT
+            Connection:
+              schema:
+                type: string
+                example: close
+            X-Powered-By:
+              schema:
+                type: number
+                example: PHP/7.4.3
+            Cache-Control:
+              schema:
+                type: string
+                example: no-cache, private
+            Content-Type:
+              schema:
+                type: string
+                example: application/json
+            X-RateLimit-Limit:
+              schema:
+                type: integer
+                example: '60'
+            X-RateLimit-Remaining:
+              schema:
+                type: integer
+                example: '58'
+            Vary:
+              schema:
+                type: string
+                example: Origin
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                success: true
+                code: 0
+                message: OK
+                data:
+                  membership:
+                    users_id: 2
+                    status: Disabled
+                    type: Admin
+                    persons_id: null
+                    first_name: Tester
+                    middle_name: null
+                    last_name: Testing
+                    email: testing@unifiedcompliance.com
+                    api_key: 5217be1c-3e12-4e90-a2ab-29600912473d
