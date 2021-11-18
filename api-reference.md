@@ -14,4 +14,5 @@ We are in early alpha and kicking off documentation. This is what you need to kn
 6. Post Account/approve and Post Account/deny - Specifically looks for membership status 5 (Requested) and approve makes the user "active" and deny makes the user "declined". These endpoints are important when a user at the api gateway platform web application requests to join an account. (we will have a webhook later that you can subscribe to by account to receive notification of a request).
 7. Post Account/promote - Will no longer promote an existing admin, but will promote any active user with an account membership to the admin role. The current admin WILL ALSO stay an admin. (we are going to support multiple admins now - for backup administration etc)
 8. Post Account/demote - Will demote an admin to a regular user. With the exception of the admin-user making the request.
-9. Get /User
+9. Get /User - Gets a single user object using their API key.  This does not provide membership information.
+10. Patch /User - Updates a single user for the purpose of TLP acknowledgement and Person linking.
