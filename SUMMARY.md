@@ -1,4 +1,4 @@
 # Table of contents
 
-* [Welcome!](README.md)
+* [API Gateway Platform Management](README.md)
 * [API Reference](api-reference.md)
