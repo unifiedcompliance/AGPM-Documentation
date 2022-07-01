@@ -1,12 +1,8 @@
-
-
-
+# Unified Compliance API Gateway
 
 ![](.gitbook/assets/260x260white\_background.png)
 
-
-
-sadf Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet orci lobortis, sagittis lacus vel, tincidunt orci. Integer et velit eu nisl dictum tincidunt. Phasellus bibendum, lectus sed vehicula tincidunt, ipsum nunc vulputate felis, vel varius mi dolor quis purus. Proin eleifend justo non imperdiet sagittis. Vivamus sed varius quam, vel ornare dui. Nullam vel metus consequat, sollicitudin quam ac, dictum erat. Phasellus viverra non odio tempor facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+sadf Mark Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet orci lobortis, sagittis lacus vel, tincidunt orci. Integer et velit eu nisl dictum tincidunt. Phasellus bibendum, lectus sed vehicula tincidunt, ipsum nunc vulputate felis, vel varius mi dolor quis purus. Proin eleifend justo non imperdiet sagittis. Vivamus sed varius quam, vel ornare dui. Nullam vel metus consequat, sollicitudin quam ac, dictum erat. Phasellus viverra non odio tempor facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
 
 In dictum ut nulla ut commodo. Morbi hendrerit arcu nulla, at rhoncus nisl rutrum id. Donec ac ornare elit. In egestas gravida diam at volutpat. Fusce efficitur, lacus id convallis ullamcorper, orci quam aliquet enim, vitae interdum enim augue at erat. Nunc efficitur imperdiet metus hendrerit lobortis. Curabitur sapien urna, tristique eu lacinia in, bibendum quis libero. Quisque ultricies ante non ex consectetur, a aliquam ligula egestas. Morbi ut commodo tellus. Mauris a eros sit amet ante maximus facilisis.
 
