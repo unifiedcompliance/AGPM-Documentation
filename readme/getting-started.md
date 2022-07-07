@@ -1,8 +1,7 @@
 ---
 description: >-
-  Follow these steps to create your account, accept the terms, create a billing
-  contact, specify a payment type, and invite team members....so you can begin
-  making API calls to retrieve UCF data.
+  Follow these steps to create your account so your Organization can begin
+  making API calls to retrieve UCF data!
 ---
 
 # Getting Started
@@ -38,18 +37,18 @@ Then enter the following.  Multiple values can be specified, so utilize the _Pri
 
 * Other Names (for example, a sub-company or division name)
 * Primary Domain (the primary web domain of your Organization, ie. unifiedcompliance.com)
-* Social Addresses (enter at least two social addresses for your Organization, ie. [https://www.facebook.com/UnifiedCompliance/](https://www.facebook.com/UnifiedCompliance/) and [https://twitter.com/the\_ucf](https://twitter.com/the\_ucf)).  The following social sites are supported:  Twitter, Facebook, LinkedIn, Instagram, Github, Medium, Vimeo, Pintrest, Reddit, and Dribble.
-* Primary Address (enter a primary address of your Organization)
-* Primary Phone (enter a primary phone number of your Organization)
-* Primary Email (enter an email address of your Organization)
+* Social Addresses (enter at least two social addresses for your Organization, ie. [https://www.facebook.com/UnifiedCompliance/](https://www.facebook.com/UnifiedCompliance/) and [https://twitter.com/the\_ucf](https://twitter.com/the\_ucf)).  The following social sites are available for selection:  Twitter, Facebook, LinkedIn, Instagram, Github, Medium, Vimeo, Pintrest, Reddit, and Dribble.
+* Primary Address (enter the primary address of your Organization)
+* Primary Phone (enter the primary phone number of your Organization)
+* Primary Email (enter the primary email address of your Organization)
 
 #### Step 5:  Finish your Account Details
 
-Now you can finish the setup of your account, by specifying:
+Now you can finish the setup of your account by specifying:
 
-* Account Name - different from the First & Last name on Signup right?
-* Account Address
-* Account Phone Number
+* Account Name (a name for the over-arching Account.  Note:  This is not the same as the First & Last Name specified during sign up for the Administrator user.  This is simply a name for the account)
+* Account Address (the primary address of the account)
+* Account Phone Number (the primary phone number of the account)
 
 #### Step 6: Choose Your Subscription
 
@@ -68,9 +67,11 @@ Second, choose from one of the following payment types:  Credit Card, ACH Direct
 
 For Credit Card payment, specify the following:
 
-* Credit Card Number
-* Credit Card Expiry Date
-* Credit Card Security Code (the 3 or 4 digit code on the back of the card)
+* Card Number
+* Card Expiry Date
+* Card Security Code (the 3 or 4 digit code on the back of the credit card)
+* Cardholder Name (the name on the front of the credit card)
+* Cardholder Email (the email address of the card holder)
 
 For ACH Direct Debit Payment, specify the following:
 
@@ -79,7 +80,7 @@ For ACH Direct Debit Payment, specify the following:
 * Routing Number (the routing number associated with the bank account)
 * Account Number (the account number associated with the bank account)
 
-Note:  A bank account payment method will need verification before it can be used for funding.  You will receive two small deposits into your bank account for verification purposes, which will appear in your account within 1-2 business days.  Your statement will have a description that includes AMTS followed by the two micro-deposit amounts.  Once you have received the deposits, please return to the gateway application and enter the amounts in order to verify your bank account.  In following this verification process, you authorize Unified Compliance to electronically credit and, if necessary, debit your account to correct erroneous credits.
+Note:  A bank account payment method will need verification before it can be used for funding.  You will receive two small deposits into your bank account for verification purposes, which will appear in your account within 1-2 business days.  Your statement will have a description that includes AMTS followed by the two micro-deposit amounts.  Once you have received the deposits, please return to this page in the gateway application and enter the amounts in order to verify your bank account.  In following this verification process, you authorize Unified Compliance to electronically credit and, if necessary, debit your account to correct erroneous credits.
 
 For Purchase Orders:
 
@@ -89,7 +90,7 @@ Once you have finished specifying your billing contact and payment method detail
 
 #### Step 7:  All Done
 
-Congratulations!  You have successfully completed the setup of your account!  Since you created the account, you are the Administrator, so now you can invite team members, review dashboard reports, review transaction history, add funding to your account, and more. &#x20;
+Congratulations!  You have successfully completed the setup of your account.  Since you created the account, you are the Administrator, so now you can invite team members, review dashboard reports, review transaction history, add funding to your account, and more!  Your API key (for the Administrator user) will appear on this page - keep your API key in a safe place and use it when making all API calls under the Administrator user.  Let's look next at how you can invite team members to your account so they can utilize their own API key when making API calls.
 
 
 
