@@ -1,3 +1,0 @@
-# Funding
-
-MORE HERE....

@@ -1,3 +1,0 @@
-# Billing Information
-
-MORE HERE......

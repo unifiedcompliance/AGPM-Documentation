@@ -5,10 +5,10 @@ Now that you have registered your account, the Admin user can perform several ad
 * Review Billing Information and make modifications
 * Review Subscriptions and make modifications
 * Review your current Funding status and add funding to your account
-* Review all of your Transactions
-* Invite more member to your team
+* Review all of your API Transactions
+* Invite more members to your team
 * Customize your Account
 * Review your Profile and make modifications
 * Become a Contributor
 
-To see how, continue to the next slide.
+To learn how, continue to the next slide.
