@@ -11,4 +11,4 @@ Now that you have registered your account, the Admin user can perform several ad
 * Review your Profile and make modifications
 * Become a Contributor
 
-To learn how, continue to the next slide.
+To learn how to manage your billing information, visit the next section of this guide.

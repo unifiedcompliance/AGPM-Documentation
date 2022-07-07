@@ -54,4 +54,4 @@ The user will be prompted for their sign-in credentials which are email address 
 
 The user will be presented with the Terms of Use.  By pressing _I Accept_, they accept the terms of use and can access the gateway application.  Users are only allowed to update their profile information. &#x20;
 
-To learn more about how to customize your account level settings, visit the next section of this guide.
+To learn about how to customize your account level settings, visit the next section of this guide.

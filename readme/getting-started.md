@@ -1,12 +1,14 @@
 ---
 description: >-
   Follow these steps to create your account so your Organization can begin
-  making API calls to retrieve UCF data!
+  making API calls to interact with UCF data!
 ---
 
 # Getting Started
 
 #### Step 1:  Register
+
+Open the following URL in your browser:  [https://agpm.complianceascode.net/](https://agpmdev.complianceascode.net/)
 
 Choose the _Register_ link, and enter your:
 
@@ -15,7 +17,7 @@ Choose the _Register_ link, and enter your:
 * Email Address
 * Password
 
-Then press _Register and Accept Invite_.
+Then press the _Register and Accept Invite_ button.
 
 #### Step 2:  Account Verification
 
@@ -67,8 +69,8 @@ Second, choose from one of the following payment types:  Credit Card, ACH Direct
 
 For Credit Card payment, specify the following:
 
-* Card Number
-* Card Expiry Date
+* Card Number (the number on the front of the credit card)
+* Card Expiry Date (the expiration date in MM/YY format)
 * Card Security Code (the 3 or 4 digit code on the back of the credit card)
 * Cardholder Name (the name on the front of the credit card)
 * Cardholder Email (the email address of the card holder)
@@ -77,20 +79,20 @@ For ACH Direct Debit Payment, specify the following:
 
 * Bank Name (the financial institution)
 * Account Type (either _Checking_ or _Savings_)
-* Routing Number (the routing number associated with the bank account)
+* Routing Number (the routing number associated with the bank account - 9 digits long)
 * Account Number (the account number associated with the bank account)
 
 Note:  A bank account payment method will need verification before it can be used for funding.  You will receive two small deposits into your bank account for verification purposes, which will appear in your account within 1-2 business days.  Your statement will have a description that includes AMTS followed by the two micro-deposit amounts.  Once you have received the deposits, please return to this page in the gateway application and enter the amounts in order to verify your bank account.  In following this verification process, you authorize Unified Compliance to electronically credit and, if necessary, debit your account to correct erroneous credits.
 
-For Purchase Orders:
+For Purchase Orders, specify the following:
 
-* **NEED MORE HERE**
+* Purchase Order Number&#x20;
+* Purchase Order Terms (number of days)
 
 Once you have finished specifying your billing contact and payment method details, press _Agree & Subscribe_.
 
 #### Step 7:  All Done
 
-Congratulations!  You have successfully completed the setup of your account.  Since you created the account, you are the Administrator, so now you can invite team members, review dashboard reports, review transaction history, add funding to your account, and more!  Your API key (for the Administrator user) will appear on this page - keep your API key in a safe place and use it when making all API calls under the Administrator user.  Let's look next at how you can invite team members to your account so they can utilize their own API key when making API calls.
+Congratulations!  You have successfully completed the setup of your Admin user and account.  Since you created the account, you are the Administrator, so now you can invite team members, review dashboard reports, review transaction history, add funding to your account, and more!  Your API key (for the Administrator user) will appear on this page - keep your API key in a safe place and use it when making all API calls under the Administrator user. &#x20;
 
-
-
+To learn about how to manage your account, visit the next section of this guide.

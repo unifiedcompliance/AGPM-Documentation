@@ -12,4 +12,4 @@ You can modify the following account level settings:
 
 Once all changes are made, select the _Save_ button.
 
-To learn more about how to manage the Profile of the logged in user, visit the next section of this guide.
+To learn about how to manage the Profile of the logged-in user, visit the next section of this guide.

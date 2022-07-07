@@ -25,4 +25,4 @@ You can associate one or more accounts/users to your account.
 
 
 
-To learn more about how to become a contributor, visit the next section of this guide.
+To learn about how to become a contributor, visit the next section of this guide.
