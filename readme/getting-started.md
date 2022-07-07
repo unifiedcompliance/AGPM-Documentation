@@ -15,7 +15,7 @@ Choose the _Register_ link, and enter your:
 * Email Address
 * Password
 
-Then press _Register and Accept Invite_.
+Then press the _Register and Accept Invite_ button.
 
 #### Step 2:  Account Verification
 
