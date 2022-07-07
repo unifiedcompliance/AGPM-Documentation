@@ -22,12 +22,14 @@ In the modal window presented, enter the following:
 * Last Name (the last name of the user)
 * Email Address (the email address of the user)
 
-Now press the _Invite User_ button.  An email will be generated and sent to the email address specified.  Upon receipt of the email, the user can click on the link within the email to accept the invitation (see Step 4 below).  On the Team page, the Administrator of an account can manage team members and perform the following operations:
+Now press the _Invite User_ button.  An email will be generated and sent to the email address specified.  Upon receipt of the email, the user can click on the link within the email to accept the invitation (see Step 4 below). &#x20;
+
+On the Team page, the Administrator of an account can manage team members and perform the following operations:
 
 * Distribute API Key (copy the API key for a particular user and provide it to them)
-* Remove a team member (delete them as a user)
-* Promote a team member (modify their status from pending to active)
-* Revoke a team member (modify their from active to pending)&#x20;
+* Revoke a team member (disable them as a user)
+* Promote a team member (modify their type from User to Administrator)
+* Demote a team member (modify their type from Administrator to User)&#x20;
 
 #### Step 4: User Accepts Invitation
 
@@ -52,4 +54,4 @@ The user will be prompted for their sign-in credentials which are email address 
 
 The user will be presented with the Terms of Use.  By pressing _I Accept_, they accept the terms of use and can access the gateway application.  Users are only allowed to update their profile information. &#x20;
 
-To learn more about how to customize your account, visit the next section of this guide.
+To learn more about how to customize your account level settings, visit the next section of this guide.
