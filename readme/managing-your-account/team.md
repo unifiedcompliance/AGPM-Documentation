@@ -1,10 +1,10 @@
 ---
-description: Follow the steps below to invite team members to your account.
+description: Follow the steps below to manage the team members of your account.
 ---
 
-# Invite Team Members
+# Team
 
-Team members receive their own API key for making REST-based API calls to the API Gateway, so you can track API calls by users within an account.  Follow these steps to invite team members:
+Team members receive their own API key for making REST-based API calls to the API Gateway, so you can track API calls by user within an account.  Follow these steps to invite team members:
 
 #### Step 1:  Choose _Team_
 
@@ -12,7 +12,7 @@ From the main navigation bar on the left side of the application, choose _Team_.
 
 #### Step 2:  Choose _Invite User_
 
-Press the button on the Team page that says _Invite User_.
+Press the _Invite User_ button on the Team page.
 
 #### Step 3:  Specify User Details
 
@@ -53,5 +53,16 @@ The user will be prompted for their sign-in credentials which are email address 
 #### Step 7:  Accept the Terms of Use
 
 The user will be presented with the Terms of Use.  By pressing _I Accept_, they accept the terms of use and can access the gateway application.  Users (non-Administrators) are only allowed to update their profile information and will not have access to all of the other gateway functions.&#x20;
+
+#### Manage Team Members
+
+You can utilize the Team page to manage existing team members as well.  The following functions are available:
+
+* Copy API Key - use this to copy the API Key so you can deliver it to the user
+* Refresh - use this to generate a new API Key for the user
+* Promote - use this to modify the user Type from _User_ to _Admin (only available for Active users)_
+* Demote - use this to modify the user Type from Admin to User (_only available for Active users_)
+* Revoke - use this to modify the Status of the user from Active to Disabled (_only available for Active users_)
+* Activate -use this to modify the Status of the user from Disabled to Active (_only available for Disabled users_)&#x20;
 
 To learn about how to customize your account level settings, visit the next section of this guide.

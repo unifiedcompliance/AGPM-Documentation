@@ -7,7 +7,7 @@
     * [Subscription](readme/subscription.md)
     * [Funding](readme/funding.md)
     * [Transactions](readme/transactions.md)
-    * [Invite Team Members](readme/invite-team-members.md)
+    * [Team](readme/managing-your-account/team.md)
     * [Customize](readme/customize.md)
     * [Profile](readme/profile/README.md)
       * [Become a Contributor](readme/profile/become-a-contributor.md)
