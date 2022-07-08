@@ -52,6 +52,6 @@ The user will be prompted for their sign-in credentials which are email address 
 
 #### Step 7:  Accept the Terms of Use
 
-The user will be presented with the Terms of Use.  By pressing _I Accept_, they accept the terms of use and can access the gateway application.  Users are only allowed to update their profile information. &#x20;
+The user will be presented with the Terms of Use.  By pressing _I Accept_, they accept the terms of use and can access the gateway application.  Users (non-Administrators) are only allowed to update their profile information and will not have access to all of the other gateway functions.&#x20;
 
 To learn about how to customize your account level settings, visit the next section of this guide.

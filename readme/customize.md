@@ -1,6 +1,6 @@
 # Customize
 
-Use the Customize page to manage your account level settings.
+Use the Customize page to manage your Account level settings.
 
 #### Manage Account
 

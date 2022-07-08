@@ -11,15 +11,16 @@ You can modify the following user level settings:
 
 Once all changes are made, select the _Save_ button.
 
-#### Associated Accounts (users?)
+#### Associated Accounts
 
-You can associate one or more accounts/users to your account.
+A User can belong to more than one Account.  Select the _Associated Accounts_ link and you will see all of the accounts the logged-in user belongs to, along with:
 
-**MORE INFO NEEDED HERE!**
+* Account Name (the name of the Account they belong to)
+* Type (the user type for this account, ie. User or Admin)
+* Status (the status of this user for this account)
+* API Key (the API Key of this user for this account)
 
-**ADD ACCOUNT BUTTON** - what does this do?
-
-**SWITCH BUTTON** - what does this do?
+****
 
 
 
