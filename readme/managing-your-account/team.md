@@ -24,13 +24,6 @@ In the modal window presented, enter the following:
 
 Now press the _Invite User_ button.  An email will be generated and sent to the email address specified.  Upon receipt of the email, the user can click on the link within the email to accept the invitation (see Step 4 below). &#x20;
 
-On the Team page, the Administrator of an account can manage team members and perform the following operations:
-
-* Distribute API Key (copy the API key for a particular user and provide it to them)
-* Revoke a team member (disable them as a user)
-* Promote a team member (modify their type from User to Administrator)
-* Demote a team member (modify their type from Administrator to User)&#x20;
-
 #### Step 4: User Accepts Invitation
 
 After selecting the link to accept the invitation, the user will be navigated to the API Gateway registration form.  They will see a message that the Administrator of their Organization invited them, and they can specify the following:
@@ -63,6 +56,6 @@ You can utilize the Team page to manage existing team members as well.  The foll
 * Promote - use this to modify the user Type from _User_ to _Admin (only available for Active users)_
 * Demote - use this to modify the user Type from Admin to User (_only available for Active users_)
 * Revoke - use this to modify the Status of the user from Active to Disabled (_only available for Active users_)
-* Activate -use this to modify the Status of the user from Disabled to Active (_only available for Disabled users_)&#x20;
+* Activate - use this to modify the Status of the user from Disabled to Active (_only available for Disabled users_)&#x20;
 
 To learn about how to customize your account level settings, visit the next section of this guide.
