@@ -40,7 +40,7 @@ This API takes a POST request where the API Key in the header will determine the
 
 Reference the API Specification here:[#retrieve-user](api-test.md#retrieve-user "mention") &#x20;
 
-This API takes a GET request where the API Key in the header will determine the user (in the account they belong to) to return in the response.  The API response does not contain membership information (ie. API Key), however, it will contain the user ID, first name, middle name, last name, email address, person ID, contribute as, terms accepted, and the date/time the terms were accepted. &#x20;
+This API takes a GET request where the API Key in the header will determine the user (in the account they belong to) to return in the response.  The API response does not contain membership information (ie. API Key), however, it will contain the User ID, first name, middle name, last name, email address, person ID, contribute as, terms accepted, and the date/time the terms were accepted. &#x20;
 
 #### Update User in Account
 
@@ -56,31 +56,31 @@ Enum values for Terms\_Accepted are:  true, false &#x20;
 
 Reference the API Specification here: [#activate-user](api-test.md#activate-user "mention")
 
-This API takes a POST request where the API Key in the header will determine the user and account to update.  And in the POST body, send the user\_id of the user to activate.  This operation will change a user's membership status to "active" regardless of the current status.
+This API takes a POST request where the API Key in the header will determine the user and account to update.  And in the POST body, send the User ID of the user to activate.  This operation will change a user's membership status to "active" regardless of the current status.
 
 #### Remove User from Account
 
-This API takes a POST request where the API Key in the header will determine the account the user is in.  And in the POST body, send the user\_id of the user to remove.  This operation will change any user's membership status to "disabled" (with the exception of the admin-user making the request). &#x20;
+Reference the API Specification here: [#remove-user](api-test.md#remove-user "mention")
 
-#### Approve User in Account
-
-This API takes a POST request where the API Key in the header will determine the account the user belongs to.  And in the POST body, send the user\_id of the user.  Note:  This API relies on a "request to join account" API that currently is not published.  This operation looks for a membership status of "5" (requested to join) and sets the status of the user in the account to "active".
-
-#### Deny User in Account
-
-This API takes a POST request where the API Key in the header will determine the account the user belongs to.  And in the POST body, send the user\_id of the user.  Note:  This API relies on a "request to join account" API that currently is not published.  This operation looks for a membership status of "5" (requested to join) and sets the status of the user in the account to "declined".   &#x20;
+This API takes a POST request where the API Key in the header will determine the user and account to remove (disable).  And in the POST body, send the User ID of the user to remove.  This operation will change any user's membership status to "disabled" (with the exception of the admin-user making the request). &#x20;
 
 #### Promote User in Account
 
-This API takes a POST request where the API Key in the header will determine the account the user belongs to.  And in the POST body, send the user\_id of the user.  This operation promotes an active User on the account to an Admin.   An account may have several Admin users (as needed to manage the account). &#x20;
+Reference the API Specification here: [#promote-user](api-test.md#promote-user "mention")
+
+This API takes a POST request where the API Key in the header will determine the user and account to promote.  And in the POST body, send the User ID of the user.  This operation promotes an active User on the account to an Admin.   An account may have several Admin users (as needed to manage the account). &#x20;
 
 #### Demote User in Account
 
-This API takes a POST request where the API Key in the header will determine the account the user belongs to.  And in the POST body, send the user\_id of the user.  This operation demotes an active Admin user to a regular user (with the exception of the admin-user making the request).
+Reference the API Specification here: [#demote-user](api-test.md#demote-user "mention")
+
+This API takes a POST request where the API Key in the header will determine the account the user belongs to.  And in the POST body, send the User ID of the user.  This operation demotes an active Admin user to a regular user (with the exception of the admin-user making the request).
 
 #### Refresh User API Key in Account
 
-This API takes a POST request where the API Key in the header will determine the account the user belongs to.  And in the POST body, send the user\_id of the user.  This operation generates a new API key for the user in the account (and the old API Key van no longer be used). &#x20;
+Reference the API Specification here: [#refresh-api-key](api-test.md#refresh-api-key "mention")
+
+This API takes a POST request where the API Key in the header will determine the user and account to generate a new API Key.  And in the POST body, send the User ID of the user.  This operation generates a new API key for the user in the account (and the old API Key can no longer be used). &#x20;
 
 #### License
 

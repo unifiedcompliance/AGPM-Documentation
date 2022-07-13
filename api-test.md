@@ -287,3 +287,151 @@ The User ID of the user
 ```
 {% endswagger-response %}
 {% endswagger %}
+
+{% swagger method="post" path="/Account/remove" baseUrl="https://api.complianceascode.net/manage" summary="Remove User" %}
+{% swagger-description %}
+The user will be removed from the account that matches the API Key sent in the header of the request.
+{% endswagger-description %}
+
+{% swagger-parameter in="header" name="x-api-key" required="true" %}
+API Key of the account membership
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" required="true" name="users_id" type="Integer" %}
+The User ID of the user
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="Returns the details of the user removed from the account.  The Status returned will be "Disabled"." %}
+```javascript
+{
+    "success": "string",
+    "code": "integer",
+    "message": "string",
+    "data": {
+        "membership": {
+            "users_id": "integer",
+            "status": "string",
+            "type": "string",
+            "persons_id": "integer",
+            "first_name": "string",
+            "middle_name": "string",
+            "last_name": "string"",
+            "email": "string",
+            "api_key": "string""
+        }
+    }
+}
+```
+{% endswagger-response %}
+{% endswagger %}
+
+{% swagger method="post" path="/Account/promote" baseUrl="https://api.complianceascode.net/manage" summary="Promote User" %}
+{% swagger-description %}
+The user from the account that matches the API Key sent in the header of the request will be promoted.
+{% endswagger-description %}
+
+{% swagger-parameter in="header" name="x-api-key" required="true" %}
+API Key of the account membership
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" required="true" name="users_id" type="Integer" %}
+The User ID of the user
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="Returns the details of the user promoted in the account.  The Type returned will be "Admin"." %}
+```javascript
+{
+    "success": "string",
+    "code": "integer",
+    "message": "string",
+    "data": {
+        "membership": {
+            "users_id": "integer",
+            "status": "string",
+            "type": "string",
+            "persons_id": "integer",
+            "first_name": "string",
+            "middle_name": "string",
+            "last_name": "string"",
+            "email": "string",
+            "api_key": "string""
+        }
+    }
+}
+```
+{% endswagger-response %}
+{% endswagger %}
+
+{% swagger method="post" path="/Account/demote" baseUrl="https://api.complianceascode.net/manage" summary="Demote User" %}
+{% swagger-description %}
+The user from the account that matches the API Key sent in the header of the request will be demoted.
+{% endswagger-description %}
+
+{% swagger-parameter in="header" name="x-api-key" required="true" %}
+API Key of the account membership
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" required="true" name="users_id" type="Integer" %}
+The User ID of the user
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="Returns the details of the user demoted in the account.  The Type returned will be "User"." %}
+```javascript
+{
+    "success": "string",
+    "code": "integer",
+    "message": "string",
+    "data": {
+        "membership": {
+            "users_id": "integer",
+            "status": "string",
+            "type": "string",
+            "persons_id": "integer",
+            "first_name": "string",
+            "middle_name": "string",
+            "last_name": "string"",
+            "email": "string",
+            "api_key": "string""
+        }
+    }
+}
+```
+{% endswagger-response %}
+{% endswagger %}
+
+{% swagger method="post" path="/Account/refresh" baseUrl="https://api.complianceascode.net/manage" summary="Refresh API Key" %}
+{% swagger-description %}
+The user from the account that matches the API Key sent in the header of the request will have a new API Key generated.
+{% endswagger-description %}
+
+{% swagger-parameter in="header" name="x-api-key" required="true" %}
+API Key of the account membership
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" required="true" name="users_id" type="Integer" %}
+The User ID of the user
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="Returns the details of the user that had a new API Key generated.  Copy the api_key in the response and distribute it to the user." %}
+```javascript
+{
+    "success": "string",
+    "code": "integer",
+    "message": "string",
+    "data": {
+        "membership": {
+            "users_id": "integer",
+            "status": "string",
+            "type": "string",
+            "persons_id": "integer",
+            "first_name": "string",
+            "middle_name": "string",
+            "last_name": "string"",
+            "email": "string",
+            "api_key": "string""
+        }
+    }
+}
+```
+{% endswagger-response %}
+{% endswagger %}
