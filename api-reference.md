@@ -26,6 +26,8 @@ This API takes a GET request where the API Key in the header will determine the 
 
 #### Add User to Account
 
+[#add-user-api-specification](api-test.md#add-user-api-specification "mention")
+
 This API takes a POST request where the API Key in the header will determine the account to add the user to.  And in the POST body, send the First Name, Last Name, and Email Address of the user to add.  This operation adds the user to the account without an invitation, the membership is immediately active, and the API Key generated for the user can be used to make API calls.&#x20;
 
 #### Invite a User
