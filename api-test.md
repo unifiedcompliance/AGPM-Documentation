@@ -88,7 +88,7 @@ First name of the user
 Last name of the user
 {% endswagger-parameter %}
 
-{% swagger-response status="200: OK" description="Returns the details of the user added to the account" %}
+{% swagger-response status="200: OK" description="Returns the details of the user added to the account.  The Status returned will be "Active"." %}
 ```javascript
 {
     "success": "boolean",
@@ -133,7 +133,7 @@ First name of the user
 Last name of the user
 {% endswagger-parameter %}
 
-{% swagger-response status="200: OK" description="Returns the details of the user added to the account.  The Status returned will be "active"." %}
+{% swagger-response status="200: OK" description="Returns the details of the user added to the account.  The Status returned will be "Invited"." %}
 ```javascript
 {
     "success": "boolean",
