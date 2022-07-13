@@ -75,13 +75,13 @@ This API takes a POST request where the API Key in the header will determine the
 
 Reference the API Specification here: [#demote-user](api-test.md#demote-user "mention")
 
-This API takes a POST request where the API Key in the header will determine the account the user belongs to.  And in the POST body, send the User ID of the user.  This operation demotes an active Admin user to a regular user (with the exception of the admin-user making the request).
+This API takes a POST request where the API Key in the header will determine the user and  account to demote.  And in the POST body, send the User ID of the user.  This operation demotes an active Admin user to a regular user by setting the Type to "User" (with the exception of the admin-user making the request).
 
 #### Refresh User API Key in Account
 
 Reference the API Specification here: [#refresh-api-key](api-test.md#refresh-api-key "mention")
 
-This API takes a POST request where the API Key in the header will determine the user and account to generate a new API Key.  And in the POST body, send the User ID of the user.  This operation generates a new API key for the user in the account (and the old API Key can no longer be used). &#x20;
+This API takes a POST request where the API Key in the header will determine the user and account to generate a new API Key.  And in the POST body, send the User ID of the user.  This operation generates a new API key for the user in the account (and the old API Key can no longer be used for making API calls). &#x20;
 
 #### License
 
