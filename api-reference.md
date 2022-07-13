@@ -17,7 +17,7 @@ The Unified Compliance API gateway provides several APIs that you can utilize to
 * Demote a user in an account
 * Refresh the API Key for a user in an account
 
-Let's take a closer look at each of these APIs below.
+Let's take a closer look at the details of each of these APIs below.
 
 #### Retrieve All Account Data
 
