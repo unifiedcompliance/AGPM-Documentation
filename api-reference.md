@@ -8,14 +8,14 @@ The Unified Compliance API gateway provides several APIs that you can utilize to
 
 * Retrieve all users on the account including account information
 * Add a user to an account&#x20;
-* Invite a user to the account
-* Retrieve a specific user on an account
-* Update a specific user on the account
-* Activate a user on the account
-* Remove a user on the account
-* Promote a user on the account
-* Demote a user on the account
-* Refresh the API Key for a user on the account
+* Invite a user to an account
+* Retrieve a specific user in an account
+* Update a specific user in an account
+* Activate a user in an account
+* Remove a user in an account
+* Promote a user in an account
+* Demote a user in an account
+* Refresh the API Key for a user in an account
 
 Let's take a closer look at each of these APIs below.
 
