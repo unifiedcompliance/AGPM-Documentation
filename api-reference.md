@@ -23,7 +23,7 @@ Let's take a closer look at the details of each of these APIs below.
 
 Reference the API Specification here:  [#retrieve-account](api-test.md#retrieve-account "mention")
 
-This API takes a GET request where the API Key in the header will determine the account to return in the response.  The API response will contain the Account ID, Account Name, Account Domain, Organization ID, the Account token balance, an arrays of Account Addresses, an array of Account Phone Numbers, and an array of Users.  If this API call is made utilizing an Admin API Key, then the API key of each user will be returned in the array of users.  If a regular User (non-admin) makes this  API call, then the API key of each user in the account will not be returned. &#x20;
+This API takes a GET request where the API Key in the header will determine the account to return in the response.  The API response will contain the Account ID, Account Name, Account Domain, Organization ID, the Account token balance, an array of Account Addresses, an array of Account Phone Numbers, and an array of Users.  If this API call is made utilizing an Admin API key, then the API key of each user will be returned in the array of users.  If a regular User (non-admin) makes this  API call, then the API key of each user in the account will not be returned. &#x20;
 
 #### Add User to Account
 
@@ -63,7 +63,7 @@ This API takes a POST request where the API Key in the header will determine the
 
 Reference the API Specification here: [#remove-user](api-test.md#remove-user "mention")
 
-This API takes a POST request where the API Key in the header will determine the user and account to remove (disable).  And in the POST body, send the User ID of the user to remove.  This operation will change any user's membership status to "disabled" (with the exception of the admin-user making the request). &#x20;
+This API takes a POST request where the API Key in the header will determine the user and account to remove (disable).  And in the POST body, send the User ID of the user to remove.  This operation will change the user's membership status to "disabled" (with the exception of the admin-user making the request). &#x20;
 
 #### Promote User in Account
 
