@@ -7,13 +7,14 @@ description: Utilize REST-based APIs to manage your account.
 The Unified Compliance API gateway provides several APIs that you can utilize to manage your account (effectively performing the same administrative functions you would do using the API Gateway web-based interface) .  Specifically, you can:
 
 * Retrieve all users on the account including account information
-* Retrieve a specific user on an account
-* Update a specific user on the account
 * Add a user to an account&#x20;
 * Invite a user to the account
-* Activate / Remove a user on the account
-* Approve / Deny a user that requested to join the account
-* Promote / Demote a user on the account
+* Retrieve a specific user on an account
+* Update a specific user on the account
+* Activate a user on the account
+* Remove a user on the account
+* Promote a user on the account
+* Demote a user on the account
 * Refresh the API Key for a user on the account
 
 Let's take a closer look at each of these APIs below.
