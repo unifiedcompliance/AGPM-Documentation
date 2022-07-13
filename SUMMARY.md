@@ -12,4 +12,4 @@
     * [Profile](readme/profile/README.md)
       * [Become a Contributor](readme/profile/become-a-contributor.md)
 * [API Reference](api-reference.md)
-* [API Specifications](api-test.md)
+* [API Specification](api-test.md)
