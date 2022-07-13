@@ -1,15 +1,21 @@
+---
+description: >-
+  This page provides the details necessary to call each of the account
+  management APIs.
+---
+
 # API Test
 
-{% swagger method="get" path="/Account" baseUrl="https://api.complianceascode.net/manage" summary="Returns gateway" %}
+{% swagger method="get" path="/Account" baseUrl="https://api.complianceascode.net/manage" summary="Retrieve account API specification" %}
 {% swagger-description %}
-Will contain current account information. It will be in property "organization".  Only the admin key gets the full account membership with user API keys. User keys will get account detail, but without the user API keys.
+
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="x-api-key" required="true" %}
 API Key of the account membership
 {% endswagger-parameter %}
 
-{% swagger-response status="200: OK" description="Returns account detail including" %}
+{% swagger-response status="200: OK" description="Returns account details and users" %}
 ```javascript
 {
     "success": "boolean",
