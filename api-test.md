@@ -1,12 +1,12 @@
 ---
 description: >-
   This page provides the details necessary to call each of the account
-  management APIs.
+  management APIs and see a sample response.
 ---
 
 # API Specification
 
-{% swagger method="get" path="/Account" baseUrl="https://api.complianceascode.net/manage" summary="Retrieve account API specification" %}
+{% swagger method="get" path="/Account" baseUrl="https://api.complianceascode.net/manage" summary="Retrieve Account" %}
 {% swagger-description %}
 The account returned will be based upon the API Key sent in the header of the request.
 {% endswagger-description %}
@@ -67,7 +67,7 @@ API Key of the account membership
 {% endswagger-response %}
 {% endswagger %}
 
-{% swagger method="post" path="/Account/add" baseUrl="https://api.complianceascode.net/manage" summary="Add User API specification" %}
+{% swagger method="post" path="/Account/add" baseUrl="https://api.complianceascode.net/manage" summary="Add User" %}
 {% swagger-description %}
 The user will be added to the account that matches the API Key sent in the header of the request.
 {% endswagger-description %}
@@ -112,7 +112,7 @@ Last name of the user
 {% endswagger-response %}
 {% endswagger %}
 
-{% swagger method="post" path="/Account/invite" baseUrl="https://api.complianceascode.net/manage" summary="Invite User API specification" %}
+{% swagger method="post" path="/Account/invite" baseUrl="https://api.complianceascode.net/manage" summary="Invite User" %}
 {% swagger-description %}
 The user will be invited to the account that matches the API Key sent in the header of the request.
 {% endswagger-description %}
@@ -157,9 +157,9 @@ Last name of the user
 {% endswagger-response %}
 {% endswagger %}
 
-{% swagger method="get" path="/User" baseUrl="https://api.complianceascode.net/manage" summary="Retrieve User API specification" %}
+{% swagger method="get" path="/User" baseUrl="https://api.complianceascode.net/manage" summary="Retrieve User" %}
 {% swagger-description %}
-The user returned will match the API Key sent in the header of the request.
+The user (in a specific account) returned will match the API Key sent in the header of the request.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="x-api-key" required="true" %}
@@ -183,6 +183,105 @@ API Key of the account membership
             "contribute_as": "string",
             "terms_accepted": "string",
             "terms_accepted_at": "string"
+    }
+}
+```
+{% endswagger-response %}
+{% endswagger %}
+
+{% swagger method="patch" path="/User" baseUrl="https://api.complianceascode.net/manage" summary="Update User" %}
+{% swagger-description %}
+The API Key sent in the header of the request will determine the user (within a specific account) to update.  
+{% endswagger-description %}
+
+{% swagger-parameter in="header" name="x-api-key" required="true" %}
+API Key of the account membership
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="users_id" type="Integer" required="false" %}
+The user ID of the user
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="first_name" required="true" %}
+The first name of the user
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="middle_name" required="true" %}
+The middle name of the user
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="last_name" required="true" %}
+The last name of the user
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="email" required="true" %}
+The email address of the user
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="persons_id" type="Integer" required="true" %}
+The person ID of the user (use GET to retrieve the current value).
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="contribute_as" required="true" %}
+Send a value of "person", "organization" or "both".
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="terms_accepted" %}
+Whether the terms have been accepted or not.  Send a value of "true" or "false".
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="Updates the user and returns the details." %}
+```javascript
+{
+    "success": "string",
+    "code": "integer",
+    "message": "string",
+    "data": {
+        "users_id":"integer",
+        "first_name": "string",
+        "middle_name": "string",
+        "last_name": "string",
+        "email": "string",
+        "persons_id": "integer",
+        "contribute_as": "string",
+        "terms_accepted": "string"
+    }
+}
+```
+{% endswagger-response %}
+{% endswagger %}
+
+{% swagger method="post" path="/Account/activate" baseUrl="https://api.complianceascode.net/manage" summary="Activate User" %}
+{% swagger-description %}
+The user to be activated will match the API Key sent in the header of the request.
+{% endswagger-description %}
+
+{% swagger-parameter in="header" name="x-api-key" required="true" %}
+API Key of the account membership
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" required="false" name="users_id" type="Integer" %}
+The User ID of the user
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="Returns the details of the user added to the account.  The Status returned will be "Active"." %}
+```javascript
+{
+    "success": "string",
+    "code": "integer",
+    "message": "string",
+    "data": {
+        "membership": {
+            "users_id": "integer",
+            "status": "string",
+            "type": "string",
+            "persons_id": "integer",
+            "first_name": "string",
+            "middle_name": "string",
+            "last_name": "string"",
+            "email": "string",
+            "api_key": "string""
+        }
     }
 }
 ```

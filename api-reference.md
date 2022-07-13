@@ -1,5 +1,5 @@
 ---
-description: Utilize APIs to manage your account
+description: Utilize REST-based APIs to manage your account.
 ---
 
 # API Reference
@@ -18,51 +18,67 @@ The Unified Compliance API gateway provides several APIs that you can utilize to
 
 Let's take a closer look at each of these APIs below.
 
-#### Retrieve All Account Data [#retrieve-account-api-specification](api-test.md#retrieve-account-api-specification "mention")
+#### Retrieve All Account Data
 
-This API takes a GET request where the API Key in the header will determine the account to return in the response.  The API response will contain the Account ID, Account Name, Account Domain, Organization ID, the Account token balance, an arrays of Account Addresses, an array of Account Phone Numbers, and an array of Users.  If this API call is made utilizing an Admin API Key, then the API key of each user will be returned in the array of users.  If a regular User (non-admin) makes this  API call, then the API key of each user on the account will not be returned. &#x20;
+Reference the API Specification here:  [#retrieve-account](api-test.md#retrieve-account "mention")
 
-#### Add User to Account[#add-user-api-specification](api-test.md#add-user-api-specification "mention")
+This API takes a GET request where the API Key in the header will determine the account to return in the response.  The API response will contain the Account ID, Account Name, Account Domain, Organization ID, the Account token balance, an arrays of Account Addresses, an array of Account Phone Numbers, and an array of Users.  If this API call is made utilizing an Admin API Key, then the API key of each user will be returned in the array of users.  If a regular User (non-admin) makes this  API call, then the API key of each user in the account will not be returned. &#x20;
 
-This API takes a POST request where the API Key in the header will determine the account to add the user to.  And in the POST body, send the First Name, Last Name, and Email Address of the user to add.  This operation adds the user to the account without an invitation, the membership is immediately active, and the API Key generated for the user can be used to make API calls.&#x20;
+#### Add User to Account
 
-#### Invite a User[#invite-user-api-specification](api-test.md#invite-user-api-specification "mention")
+Reference the API Specification here:  [#add-user](api-test.md#add-user "mention")
 
-This API takes a POST request where the API Key in the header will determine the account the user will be added to.  And in the POST body, send the First Name, Last Name, and Email Address of the user to add.  This operation will add a new user to the account with an "invited" membership status.  Once your user accepts the invitation, the user will need to be activated.
+This API takes a POST request where the API Key in the header will determine the account to add the user to.  And in the POST body, send the First Name, Last Name, and Email Address of the user to add.  This operation adds the user to the account without an invitation, the membership is immediately active, and the API Key generated for the user can be used immediately to make API calls.&#x20;
 
-#### Retrieve a User[#retrieve-user-api-specification](api-test.md#retrieve-user-api-specification "mention")
+#### Invite User to Account
 
-This API takes a GET request where the API Key in the header will determine the user/account to return in the response.  The API response does not contain membership information, however, it will contain the user ID, first name, middle name, last name, email address, person ID, contribute as, terms accepted, and the date/time the terms were accepted. &#x20;
+Reference the API Specification here:  [#invite-user](api-test.md#invite-user "mention")
 
-#### Update a User
+This API takes a POST request where the API Key in the header will determine the account the user will be added to.  And in the POST body, send the First Name, Last Name, and Email Address of the user to add.  This operation will add a new user to the account with an "invited" membership status.  Once your user (manually) accepts the invitation, the user will need to be activated via the Activate User API call.
 
-This API takes a PATCH request where the API Key in the header will determine the account the user will be updated in.  And in the PATCH body, you just send the user ID, and optionally one or more of these fields to update:  First Name, Middle Name, Last Name, Email Address, Person ID, Contribute As, and Terms Accepted. &#x20;
+#### Retrieve User from Account
 
-#### Activate a User
+Reference the API Specification here:[#retrieve-user](api-test.md#retrieve-user "mention") &#x20;
 
-This API takes a POST request where the API Key in the header will determine the account the user is in.  And in the POST body, send the user\_id of the user to activate.  This operation will change a user's membership status to "active" regardless of the current status.
+This API takes a GET request where the API Key in the header will determine the user (in the account they belong to) to return in the response.  The API response does not contain membership information (ie. API Key), however, it will contain the user ID, first name, middle name, last name, email address, person ID, contribute as, terms accepted, and the date/time the terms were accepted. &#x20;
 
-#### Remove a User
+#### Update User in Account
+
+Reference the API Specification here:[#update-user](api-test.md#update-user "mention")
+
+This API takes a PATCH request where the API Key in the header will determine the user and account to update.  And in the PATCH body, send the First Name, Middle Name, Last Name, Email Address, Person ID, and Contribute As values to update.  The User ID and Terms Accepted elements are optional. &#x20;
+
+Enum values for Contribute\_As are:  person, organization, both. &#x20;
+
+Enum values for Terms\_Accepted are:  true, false &#x20;
+
+#### Activate User in Account
+
+Reference the API Specification here: [#activate-user](api-test.md#activate-user "mention")
+
+This API takes a POST request where the API Key in the header will determine the user and account to update.  And in the POST body, send the user\_id of the user to activate.  This operation will change a user's membership status to "active" regardless of the current status.
+
+#### Remove User from Account
 
 This API takes a POST request where the API Key in the header will determine the account the user is in.  And in the POST body, send the user\_id of the user to remove.  This operation will change any user's membership status to "disabled" (with the exception of the admin-user making the request). &#x20;
 
-#### Approve a User
+#### Approve User in Account
 
 This API takes a POST request where the API Key in the header will determine the account the user belongs to.  And in the POST body, send the user\_id of the user.  Note:  This API relies on a "request to join account" API that currently is not published.  This operation looks for a membership status of "5" (requested to join) and sets the status of the user in the account to "active".
 
-#### Deny a User
+#### Deny User in Account
 
 This API takes a POST request where the API Key in the header will determine the account the user belongs to.  And in the POST body, send the user\_id of the user.  Note:  This API relies on a "request to join account" API that currently is not published.  This operation looks for a membership status of "5" (requested to join) and sets the status of the user in the account to "declined".   &#x20;
 
-#### Promote a User
+#### Promote User in Account
 
 This API takes a POST request where the API Key in the header will determine the account the user belongs to.  And in the POST body, send the user\_id of the user.  This operation promotes an active User on the account to an Admin.   An account may have several Admin users (as needed to manage the account). &#x20;
 
-#### Demote a User
+#### Demote User in Account
 
 This API takes a POST request where the API Key in the header will determine the account the user belongs to.  And in the POST body, send the user\_id of the user.  This operation demotes an active Admin user to a regular user (with the exception of the admin-user making the request).
 
-#### Refresh a User's API Key
+#### Refresh User API Key in Account
 
 This API takes a POST request where the API Key in the header will determine the account the user belongs to.  And in the POST body, send the user\_id of the user.  This operation generates a new API key for the user in the account (and the old API Key van no longer be used). &#x20;
 
