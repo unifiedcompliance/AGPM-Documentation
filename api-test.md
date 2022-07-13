@@ -8,7 +8,7 @@ description: >-
 
 {% swagger method="get" path="/Account" baseUrl="https://api.complianceascode.net/manage" summary="Retrieve account API specification" %}
 {% swagger-description %}
-
+The account returned will be based upon the API Key sent in the header of the request.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="x-api-key" required="true" %}
@@ -69,7 +69,7 @@ API Key of the account membership
 
 {% swagger method="post" path="/Account/add" baseUrl="https://api.complianceascode.net/manage" summary="Add User API specification" %}
 {% swagger-description %}
-
+The user will be added to the account that matches the API Key sent in the header of the request.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="x-api-key" required="true" %}
@@ -114,7 +114,7 @@ Last name of the user
 
 {% swagger method="post" path="/Account/invite" baseUrl="https://api.complianceascode.net/manage" summary="Invite User API specification" %}
 {% swagger-description %}
-
+The user will be invited to the account that matches the API Key sent in the header of the request.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="x-api-key" required="true" %}
@@ -133,7 +133,7 @@ First name of the user
 Last name of the user
 {% endswagger-parameter %}
 
-{% swagger-response status="200: OK" description="Returns the details of the user added to the account.  The Status returned will be "Invited"." %}
+{% swagger-response status="200: OK" description="Returns the details of the user invited to the account.  The Status returned will be "Invited"." %}
 ```javascript
 {
     "success": "boolean",
@@ -157,69 +157,34 @@ Last name of the user
 {% endswagger-response %}
 {% endswagger %}
 
-{% swagger method="post" path="/Account/" baseUrl="https://api.complianceascode.net/manage" summary="Invite User API specification" %}
+{% swagger method="get" path="/User" baseUrl="https://api.complianceascode.net/manage" summary="Retrieve User API specification" %}
 {% swagger-description %}
-
+The user returned will match the API Key sent in the header of the request.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="x-api-key" required="true" %}
 API Key of the account membership
 {% endswagger-parameter %}
 
-{% swagger-response status="200: OK" description="Returns account details and users" %}
+{% swagger-response status="200: OK" description="Returns the details of the user." %}
 ```javascript
 {
     "success": "boolean",
     "code": "integer",
     "message": "string",
     "data": {
-        "accounts_id": "integer",
-        "name": "string",
-        "domain": "string",
-        "organizations_id": "integer",
-        "admin": {
+            "users_id": "integer",
+            "name": "string",
             "first_name": "string",
             "middle_name": "string",
             "last_name": "string",
-            "email": "string"
-        },
-        "memberships": [
-            {
-                "users_id": "integer",
-                "status": "string",
-                "type": "string",
-                "persons_id": "integer",
-                "first_name": "string",
-                "middle_name": "string",
-                "last_name": "string",
-                "email": "string",
-                "api_key": "string"
-            }
-        ],
-        "balance": "string",
-        "addresses": {
-            "primary": {
-                "address1": "string",
-                "address2": "string",
-                "city": "string",
-                "state_territory_province": "string",
-                "postal_code": "string",
-                "country_code": "string"
-            }
-        },
-        "phone_numbers": {
-            "primary": {
-                "phone_number": "string"
-            }
-        }
+            "email": "string",
+            "persons_id": "integer",
+            "contribute_as": "string",
+            "terms_accepted": "string",
+            "terms_accepted_at": "string"
     }
 }
 ```
 {% endswagger-response %}
-{% endswagger %}
-
-{% swagger method="get" path="" baseUrl="https://api.complianceascode.net/manage" summary="" %}
-{% swagger-description %}
-
-{% endswagger-description %}
 {% endswagger %}

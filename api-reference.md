@@ -18,25 +18,19 @@ The Unified Compliance API gateway provides several APIs that you can utilize to
 
 Let's take a closer look at each of these APIs below.
 
-#### Retrieve All Account Data&#x20;
-
-[#retrieve-account-api-specification](api-test.md#retrieve-account-api-specification "mention")
+#### Retrieve All Account Data [#retrieve-account-api-specification](api-test.md#retrieve-account-api-specification "mention")
 
 This API takes a GET request where the API Key in the header will determine the account to return in the response.  The API response will contain the Account ID, Account Name, Account Domain, Organization ID, the Account token balance, an arrays of Account Addresses, an array of Account Phone Numbers, and an array of Users.  If this API call is made utilizing an Admin API Key, then the API key of each user will be returned in the array of users.  If a regular User (non-admin) makes this  API call, then the API key of each user on the account will not be returned. &#x20;
 
-#### Add User to Account
-
-[#add-user-api-specification](api-test.md#add-user-api-specification "mention")
+#### Add User to Account[#add-user-api-specification](api-test.md#add-user-api-specification "mention")
 
 This API takes a POST request where the API Key in the header will determine the account to add the user to.  And in the POST body, send the First Name, Last Name, and Email Address of the user to add.  This operation adds the user to the account without an invitation, the membership is immediately active, and the API Key generated for the user can be used to make API calls.&#x20;
 
-#### Invite a User
-
-[#invite-user-api-specification](api-test.md#invite-user-api-specification "mention")
+#### Invite a User[#invite-user-api-specification](api-test.md#invite-user-api-specification "mention")
 
 This API takes a POST request where the API Key in the header will determine the account the user will be added to.  And in the POST body, send the First Name, Last Name, and Email Address of the user to add.  This operation will add a new user to the account with an "invited" membership status.  Once your user accepts the invitation, the user will need to be activated.
 
-#### Retrieve a User
+#### Retrieve a User[#retrieve-user-api-specification](api-test.md#retrieve-user-api-specification "mention")
 
 This API takes a GET request where the API Key in the header will determine the user/account to return in the response.  The API response does not contain membership information, however, it will contain the user ID, first name, middle name, last name, email address, person ID, contribute as, terms accepted, and the date/time the terms were accepted. &#x20;
 
