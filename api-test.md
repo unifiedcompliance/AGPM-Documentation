@@ -202,7 +202,7 @@ The User ID of the user
 
 {% swagger method="post" path="/Account/remove" baseUrl="https://api.complianceascode.net/manage" summary="Remove User" %}
 {% swagger-description %}
-The user will be removed from the account that matches the API Key sent in the header of the request.
+The user will be removed (disabled) from the account that matches the API Key sent in the header of the request.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="x-api-key" required="true" %}
