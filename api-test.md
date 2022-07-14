@@ -120,7 +120,7 @@ Last name of the user
 
 {% swagger method="post" path="/Account/invite" baseUrl="https://api.complianceascode.net/manage" summary="Invite User" %}
 {% swagger-description %}
-The user will be invited to the account that matches the API Key sent in the header of the request.  This operation will add the user to the account as well.
+The user will be invited to the account that matches the API Key sent in the header of the request.  This operation will add the user to the account.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="x-api-key" required="true" %}
@@ -139,7 +139,7 @@ First name of the user
 Last name of the user
 {% endswagger-parameter %}
 
-{% swagger-response status="200: OK" description="Returns the details of the user invited to the account.  The Status returned will be "Invited"." %}
+{% swagger-response status="200: OK" description="Returns the details of the user added to the account.  The Status returned will be "Invited"." %}
 ```javascript
 {
     "success": "boolean",
@@ -172,11 +172,11 @@ The user to be activated will match the API Key sent in the header of the reques
 API Key of the account membership
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" required="false" name="users_id" type="Integer" %}
+{% swagger-parameter in="body" required="true" name="users_id" type="Integer" %}
 The User ID of the user
 {% endswagger-parameter %}
 
-{% swagger-response status="200: OK" description="Returns the details of the user added to the account.  The Status returned will be "Active"." %}
+{% swagger-response status="200: OK" description="Returns the details of the user activated in the account.  The Status returned will be "Active"." %}
 ```javascript
 {
     "success": "string",
