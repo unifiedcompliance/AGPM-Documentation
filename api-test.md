@@ -352,7 +352,7 @@ The User ID of the user
 
 {% swagger method="get" path="/User" baseUrl="https://api.complianceascode.net/manage" summary="Retrieve User" %}
 {% swagger-description %}
-The user (in a specific account) returned will match the API Key sent in the header of the request.
+The user in the account returned will match the API Key sent in the header of the request.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="x-api-key" required="true" %}
@@ -384,7 +384,7 @@ API Key of the account membership
 
 {% swagger method="patch" path="/User" baseUrl="https://api.complianceascode.net/manage" summary="Update User" %}
 {% swagger-description %}
-The API Key sent in the header of the request will determine the user (within a specific account) to update.  
+The API Key sent in the header of the request will determine the user to update.  
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="x-api-key" required="true" %}
