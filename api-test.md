@@ -116,7 +116,7 @@ Last name of the user
 
 {% swagger method="post" path="/Account/invite" baseUrl="https://api.complianceascode.net/manage" summary="Invite User" %}
 {% swagger-description %}
-The user will be invited to the account that matches the API Key sent in the header of the request.
+The user will be invited to the account that matches the API Key sent in the header of the request.  This operation will add the user to the account as well.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="x-api-key" required="true" %}
