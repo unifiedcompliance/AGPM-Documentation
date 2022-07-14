@@ -6,6 +6,10 @@ description: >-
 
 # API Specification
 
+{% hint style="info" %}
+Parameters below with a "\*" next to the name indicates it is a REQUIRED element.
+{% endhint %}
+
 ## Manage Account APIs
 
 {% swagger method="get" path="/Account" baseUrl="https://api.complianceascode.net/manage" summary="Retrieve Account" %}
