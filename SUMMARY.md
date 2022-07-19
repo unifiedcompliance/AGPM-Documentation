@@ -11,5 +11,5 @@
     * [Customize](readme/customize.md)
     * [Profile](readme/profile/README.md)
       * [Become a Contributor](readme/profile/become-a-contributor.md)
-* [API Reference](api-reference.md)
-* [API Specification](api-test.md)
+* [Gateway API Reference](api-reference.md)
+* [Gateway API Specification](api-test.md)
