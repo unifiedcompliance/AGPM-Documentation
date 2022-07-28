@@ -17,13 +17,13 @@ The API Gateway supports RESTful APIs that:
 
 The onboarding flow of the gateway will guide you through the process of registering, which includes:
 
-* Creation of your Admin user and master account
+* Creation of your admin, user, and master accounts
 * Creation of your organization
 * Enrollment in a subscription plan
 * Creation of a payment method
 
-Then you can invite team members to your account.
+Then, you can invite team members to your account.
 
 A subscription plan will provide you with API tokens, which will be decremented each time your team makes an API call.  Need more tokens?  No problem - visit the Funding page to manually add more tokens to your account. &#x20;
 
-To see how to get started, visit the next section of this guide.
+To see how to get started, visit the [next section](readme/getting-started.md) of this guide.

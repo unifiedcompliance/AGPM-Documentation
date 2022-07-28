@@ -12,18 +12,18 @@ Open the following URL in your browser:  [https://agpm.complianceascode.net/](ht
 
 Choose the _Register_ link, and enter your:
 
-* First Name
-* Last Name
 * Email Address
 * Password
+* First Name
+* Last Name
 
-Then press the _Register and Accept Invite_ button. &#x20;
+Then press the _SIGN UP_ button. &#x20;
 
-Note:  The first user to register for your account will be the Administrator user, and therefore has access to all of the gateway functions.  After inviting team members, you can promote other users to have Administrator access as well.  All of your _users_ will belong to your _account_, and it is the account that has address and phone information.  Users only have a name and email address on file.
+Note:  The first user to register for your account will be the Administrator user, and therefore has access to all of the gateway functions.  After inviting team members, you can promote other users to have administrator access as well.  All of your _users_ will belong to your _account_, and it is the account that has address and phone information.  Users only have a name and email address on file.
 
 #### Step 2:  Account Verification
 
-We'll send an email to the email address specified in Step 1.  Access the email via your favorite email client, and click on the link within the email to verify your email address.  You'll be taken to the Gateway application with confirmation that your account has been verified.  Press _Continue_ and you'll be prompted to log into the gateway using the email address and password specified in Step 1. &#x20;
+We'll send an email to your specified email address.  Click on the link within the email to verify your email address. You will be taken to the Gateway application with confirmation that your account has been verified.  Press _Continue_ and you'll be prompted to log into the gateway using the email address and password specified in Step 1. &#x20;
 
 #### Step 3:  Agree to the Terms of Use
 
