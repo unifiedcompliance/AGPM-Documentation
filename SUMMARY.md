@@ -1,5 +1,15 @@
 # Table of contents
 
-* [UC API Gateway](README.md)
-* [API Reference](api-reference.md)
-* [API Test](api-test.md)
+* [Become a Contributor](README.md)
+* [What is the Unified Compliance API Gateway?](<README (1).md>)
+  * [Getting Started](readme/getting-started.md)
+  * [Managing Your Account](readme/managing-your-account/README.md)
+    * [Billing Information](readme/billing-information.md)
+    * [Subscription](readme/subscription.md)
+    * [Funding](readme/funding.md)
+    * [Transactions](readme/transactions.md)
+    * [Team](readme/managing-your-account/team.md)
+    * [Customize](readme/customize.md)
+    * [Profile](readme/profile/README.md)
+* [Gateway API Reference](api-reference.md)
+* [Gateway API Specification](api-test.md)
