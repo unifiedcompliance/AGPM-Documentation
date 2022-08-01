@@ -10,4 +10,4 @@ You can modify the following account level settings:
 * Account Address (the main address of the account)
 * Account Phone Number (the main phone number of the account)
 
-Once all changes are made, select the _Save_ button.
+Once all changes are made, select _Save Changes._

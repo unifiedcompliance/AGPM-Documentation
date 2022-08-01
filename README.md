@@ -1,11 +1,11 @@
 # Become a Contributor
 
-Become a Contributor and you can add valuable information to the Unified Compliance Federated database.  From the main Profile page, select the _Become a Contributor_ button.
+Become a Contributor and you can add valuable information to the Unified Compliance federated database.  From the main Profile page, select the _Become a Contributor_ button.
 
 The API Gateway will perform two lookups using your profile information:
 
-1. Look up your information in the Unified Compliance Federated database.  If found, the retrieved information will be pre-populated, review and make corrections (if necessary), and select the _Save_ button.
-2. If no person was found in the Federated database, then the gateway will look up your information using an Internet-based service.  If found, the retrieved information will be pre-populated, review and make corrections (if necessary), and select the _Save_ button.  If not found, then you will need to provide the information described below.
+1. Look up your information in the Unified Compliance federated database.  If found, the retrieved information will be pre-populated. Review and make corrections (if necessary), and select the _Save_ button.
+2. If no person was found in the Federated database, then the gateway will look up your information using an Internet-based service.  If found, the retrieved information will be pre-populated. Review and make corrections (if necessary), and select the _Save_ button.  If not found, then you will need to provide the information described below.
 
 #### Federated Person
 
@@ -20,9 +20,9 @@ The following fields are available to provide the necessary information to becom
 * Phone Number (your primary phone number)
 * Languages (your primary spoken language)
 * Social Addresses (at least two social addresses of your Organization)
-* Postal Address (your street, city, country and postal code)
+* Postal Address (your street, city, country, and postal code)
 * Contribute As - Person (select this option to make contributions on behalf of yourself)
 * Contribute As - Organization (select this option to make contributions on behalf of your Organization)
 * Both - select this option to contribute as both a Person and an Organization.&#x20;
 
-Once all required (and/or non-required) fields are entered, select the _Link Person_ button.  When successful, return to your profile page where you will be denoted as a Contributor, can see if you are contributing as a Person and/or Organization, and you can view your Federated Contributor details. &#x20;
+Once all required (and/or non-required) fields are entered, select the _Link Person_ button. When successful, return to your profile page where you will be denoted as a Contributor. You can see if you are contributing as a Person and/or Organization, and you can view your Federated Contributor details. &#x20;

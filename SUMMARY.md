@@ -10,6 +10,6 @@
     * [Transactions](readme/transactions.md)
     * [Team](readme/managing-your-account/team.md)
     * [Customize](readme/customize.md)
-    * [Profile](readme/managing-your-account/profile.md)
+    * [Profile](readme/profile/README.md)
 * [Gateway API Reference](api-reference.md)
 * [Gateway API Specification](api-test.md)

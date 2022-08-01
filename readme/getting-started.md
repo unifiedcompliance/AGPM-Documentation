@@ -23,22 +23,19 @@ Note: The first user to register for your account will be the Administrator user
 
 #### Step 2: Account Verification
 
-We'll send an email to your specified email address. Click on the link within the email to verify your email address. You will be taken to the Gateway application with confirmation that your account has been verified. Press _Continue,_ and you will see a prompt to log into the gateway using the email address and password specified in Step 1.
+We'll send an email to your specified email address. Click on the link within the email to verify your email address. You will be taken to the Gateway application with confirmation that your account has been verified. Select _Back to API Gateway,_ and you will see a prompt to log into the gateway using the email address and password specified in Step 1.
 
 #### Step 3: Agree to the Terms of Use
 
-Read the Terms of Use and then select _I Accept_.
+Read the Terms of Use and then if you agree, select _I Accept_.
 
-#### Step 4: Organization Not Found
+#### Step 4: Set Up your Organization
 
-The gateway will attempt to locate and prepopulate your Organization details based on the domain of the email address specified in Step 1. If your Organization was found, then skip to Step 5. Otherwise, you will see a prompt to set up your Organization. Enter the following:
+The gateway will attempt to locate and prepopulate your Organization details based on the domain of the email address specified in Step 1. If your Organization was found, then skip to Step 5. Otherwise, you will see a prompt to _Create A New Account_. Enter the following:
 
 * Organization Name (the name of your Organization/Company)
 * Founded (the year the Organization was founded)
 * Description (a description of your Organization)
-
-Then enter the following.&#x20;
-
 * Other Names (for example, a sub-company or division name)
 * Primary Domain (the primary web domain of your Organization, for example, unifiedcompliance.com)
 * Social Addresses (enter at least two social addresses for your Organization, for example, [https://www.facebook.com/UnifiedCompliance/](https://www.facebook.com/UnifiedCompliance/) and [https://twitter.com/the\_ucf](https://twitter.com/the\_ucf)). The following social sites are available for selection: Twitter, Facebook, LinkedIn, Instagram, Github, Medium, Vimeo, Pinterest, Reddit, and Dribble.
@@ -48,7 +45,7 @@ Then enter the following.&#x20;
 
 You can enter multiple values, so utilize the _Primary_ option to make one in each list the primary value. When finished, select the _Save Organization_ button to proceed to the next step.
 
-#### Step 5: Finish your Account Details
+#### Step 5: Setup User Account Details
 
 As mentioned above, users in the system only have a name and email on file. Users belong to an account, so now we need to provide the details of the account your users belong to. Do so by specifying the following.
 
