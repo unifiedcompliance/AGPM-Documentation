@@ -4,7 +4,7 @@ description: Follow the steps below to manage the team members of your account.
 
 # Team
 
-Team members receive their own API key for making REST-based API calls to the API Gateway, so you can track API calls by user within an account.  Follow these steps to invite team members:
+Team members receive their own API key for making REST-based API calls to the API Gateway. You can track API calls by each user within an account.  Follow these steps to invite team members:
 
 #### Step 1:  Choose _Team_
 
@@ -22,7 +22,7 @@ In the modal window presented, enter the following:
 * Last Name (the last name of the user)
 * Email Address (the email address of the user)
 
-Now press the _Invite User_ button.  An email will be generated and sent to the email address specified.  Upon receipt of the email, the user can click on the link within the email to accept the invitation (see Step 4 below). &#x20;
+Now choose _Invite User_. An email will be generated and sent to the email address specified. Upon receipt, the user can accept the invitation via the link within the email. (see Step 4 below).
 
 #### Step 4: User Accepts Invitation
 
@@ -37,11 +37,11 @@ The user will then select _Register and Accept Invite_.
 
 #### Step 5:  Email Address Verification
 
-An email will be generated and sent to the email address specified in Step 4, whereby the user can verify their email address.  The user selects the link within the email and they will be navigated back to the API Gateway application.
+An email will be generated and sent to the email address specified in Step 4, whereby the user can verify their email address.  Once the user selects the link within the email; they will be navigated back to the API Gateway application.
 
 #### Step 6:  Sign In
 
-The user will be prompted for their sign-in credentials which are email address and password.
+The user will be prompted for their sign-in credentials, which are email address and password.
 
 #### Step 7:  Accept the Terms of Use
 
@@ -57,5 +57,3 @@ You can utilize the Team page to manage existing team members as well.  The foll
 * Demote - use this to modify the user Type from Admin to User (_only available for Active users_)
 * Revoke - use this to modify the Status of the user from Active to Disabled (_only available for Active users_)
 * Activate - use this to modify the Status of the user from Disabled to Active (_only available for Disabled users_)&#x20;
-
-To learn about how to customize your account level settings, visit the next section of this guide.

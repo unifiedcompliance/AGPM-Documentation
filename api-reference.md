@@ -2,11 +2,11 @@
 description: Utilize REST-based APIs to manage your account.
 ---
 
-# API Reference
+# Gateway API Reference
 
 The Unified Compliance API gateway provides several APIs that you can utilize to manage your account (effectively performing the same administrative functions you would do using the API Gateway web-based interface).  Specifically, you can:
 
-* Retrieve all users on the account including account information
+* Retrieve all users on the account, including account information
 * Add a user to an account&#x20;
 * Invite a user to an account
 * Activate a user in an account
@@ -78,7 +78,7 @@ This API takes a POST request where the API Key in the header will determine the
 
 Reference the API Specification here:[#retrieve-user](api-test.md#retrieve-user "mention") &#x20;
 
-This API takes a GET request where the API Key in the header will determine the user (in the account they belong to) to return in the response.  The API response does not contain membership information (ie. API Key), however, it will contain the User ID, first name, middle name, last name, email address, person ID, contribute as, terms accepted, and the date/time the terms were accepted. &#x20;
+This API takes a GET request where the API Key in the header will determine the user (in the account they belong to) to return in the response.  The API response does not contain membership information such as the API Key. However, it will contain the User ID, first name, middle name, last name, email address, person ID, contribute as, terms accepted, and the date/time the terms were accepted. &#x20;
 
 #### Update User in Account
 
@@ -86,7 +86,7 @@ Reference the API Specification here:[#update-user](api-test.md#update-user "men
 
 This API takes a PATCH request where the API Key in the header will determine the user and account to update.  And in the PATCH body, send the First Name, Middle Name, Last Name, Email Address, Person ID, and Contribute As values to update.  The User ID and Terms Accepted elements are optional. &#x20;
 
-Enum values for Contribute\_As are:  person, organization, both. &#x20;
+Enum values for Contribute\_As: person, organization, both. &#x20;
 
-Enum values for Terms\_Accepted are:  true, false &#x20;
+Enum values for Terms\_Accepted: true, false &#x20;
 

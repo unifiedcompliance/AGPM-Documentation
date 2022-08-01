@@ -1,29 +1,28 @@
----
-description: API Gateway Overview
----
+# Become a Contributor
 
-# What is the Unified Compliance API Gateway?
+Become a Contributor and you can add valuable information to the Unified Compliance Federated database.  From the main Profile page, select the _Become a Contributor_ button.
 
-![](.gitbook/assets/260x260white\_background.png)
+The API Gateway will perform two lookups using your profile information:
 
-The Unified Compliance API Gateway is a software platform where your organization can interact with the Unified Compliance Federated database. API developers can make API calls to the gateway to retrieve, post, and update data. &#x20;
+1. Look up your information in the Unified Compliance Federated database.  If found, the retrieved information will be pre-populated, review and make corrections (if necessary), and select the _Save_ button.
+2. If no person was found in the Federated database, then the gateway will look up your information using an Internet-based service.  If found, the retrieved information will be pre-populated, review and make corrections (if necessary), and select the _Save_ button.  If not found, then you will need to provide the information described below.
 
-The API Gateway supports RESTful APIs that:
+#### Federated Person
 
-* Are HTTP-based
-* Enable stateless client-server communication
-* Implement standard HTTP methods such as GET, POST, and PUT
-* Utilize an API Key for authentication
+The following fields are available to provide the necessary information to become a contributor:
 
-The onboarding flow of the gateway will guide you through the process of registering, which includes:
+* Your Organization Name (the name of your Organization)
+* First Name (your first name)
+* Middle Name (your middle name)
+* Last Name (your last name)
+* Other Names (other names, as needed)
+* Email Address (your primary email address)
+* Phone Number (your primary phone number)
+* Languages (your primary spoken language)
+* Social Addresses (at least two social addresses of your Organization)
+* Postal Address (your street, city, country and postal code)
+* Contribute As - Person (select this option to make contributions on behalf of yourself)
+* Contribute As - Organization (select this option to make contributions on behalf of your Organization)
+* Both - select this option to contribute as both a Person and an Organization.&#x20;
 
-* Creation of your admin, user, and master accounts
-* Creation of your organization
-* Enrollment in a subscription plan
-* Creation of a payment method
-
-Then, you can invite team members to your account.
-
-A subscription plan will provide you with API tokens, which will be decremented each time your team makes an API call.  Need more tokens?  No problem - visit the Funding page to manually add more tokens to your account. &#x20;
-
-To see how to get started, visit the [next section](readme/getting-started.md) of this guide.
+Once all required (and/or non-required) fields are entered, select the _Link Person_ button.  When successful, return to your profile page where you will be denoted as a Contributor, can see if you are contributing as a Person and/or Organization, and you can view your Federated Contributor details. &#x20;

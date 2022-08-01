@@ -10,5 +10,3 @@ Now that you have registered your account, the Administrator user can perform se
 * Customize your Account details
 * Review your Profile and make modifications
 * Become a Contributor
-
-To learn how to manage your billing information, visit the next section of this guide.
