@@ -1,4 +1,4 @@
-# API 2.0 Specification
+# Federated Database API 2.0 Specification
 
 The Unified Compliance API Gateway provides access to a large suite of RESTful APIs that allow you to interact with the Federated database.  You can retrieve (GET) Authority Documents and Citations, add (POST) an Authority Document Request to the system, and retrieve related data such as Organizations,  Persons, Subject Matters and so much more!  Once you have established a user and account in the API Gateway, use your API Key when calling each of the 2.0 APIs.
 

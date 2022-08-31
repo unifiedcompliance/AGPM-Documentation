@@ -13,4 +13,4 @@
     * [Profile](readme/profile/README.md)
 * [Gateway API Reference](api-reference.md)
 * [Gateway API Specification](api-test.md)
-* [API 2.0 Specification](api-2.0-specification.md)
+* [Federated Database API 2.0 Specification](federated-database-api-2.0-specification.md)
