@@ -1,6 +1,6 @@
-# Funding
+# Tokens
 
-Use the Funding page to add additional tokens to your account. This adds tokens on top of your current subscription.   Funding is not a recurring process as it needs to be done manually on an as-needed basis.
+Use the Tokens page to add additional tokens to your account. This adds tokens on top of your current subscription.   Funding is not a recurring process (only when your subscription renews) as it needs to be done manually on an as-needed basis.
 
 #### Add Tokens
 
